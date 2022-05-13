@@ -19,7 +19,6 @@ export async function sendPrompt(prompt) {
       }),
     });
     const data = await response.json();
-    console.log(data);
     const {
       choices: [{ text }],
     } = data;
